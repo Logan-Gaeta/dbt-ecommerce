@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: external
+    description: "Tables owned outside dbt — dbt reads them, never creates or modifies them."
+    schema: external
+    tables:
+      - name: support_tickets
+        description: "Customer support tickets from the production system."

@@ -1,0 +1,61 @@
+product_id,product_name,category,unit_price,created_date
+1,Wireless Headphones,Electronics,34.7,2022-12-09
+2,Smart Speaker,Electronics,186.43,2023-10-24
+3,USB-C Hub,Electronics,215.4,2021-09-09
+4,Mechanical Keyboard,Electronics,193.35,2023-12-26
+5,4K Monitor,Electronics,274.53,2023-12-28
+6,Bluetooth Tracker,Electronics,360.78,2023-07-15
+7,Portable Charger,Electronics,252.16,2024-10-10
+8,Noise-Cancelling Earbuds,Electronics,378.68,2021-05-15
+9,Smart Watch,Electronics,83.45,2023-07-27
+10,Tablet Stand,Electronics,44.04,2023-03-12
+11,Graphic Tee,Apparel,360.19,2022-08-14
+12,Denim Jacket,Apparel,383.71,2021-06-07
+13,Running Shoes,Apparel,52.64,2022-07-20
+14,Wool Socks 3-Pack,Apparel,53.68,2021-10-31
+15,Hoodie,Apparel,203.56,2022-02-23
+16,Chino Pants,Apparel,213.06,2024-07-08
+17,Baseball Cap,Apparel,18.84,2023-05-04
+18,Rain Jacket,Apparel,388.12,2024-01-14
+19,Yoga Leggings,Apparel,373.36,2023-08-29
+20,Flannel Shirt,Apparel,145.2,2023-06-29
+21,Cast Iron Skillet,Home & Kitchen,297.7,2021-02-13
+22,Pour-Over Coffee Set,Home & Kitchen,123.68,2021-05-09
+23,Robot Vacuum,Home & Kitchen,18.58,2022-04-21
+24,Air Fryer,Home & Kitchen,335.62,2023-12-01
+25,Duvet Cover Set,Home & Kitchen,261.41,2023-04-24
+26,Chef's Knife,Home & Kitchen,235.68,2024-09-04
+27,Stand Mixer,Home & Kitchen,261.95,2022-10-31
+28,LED Desk Lamp,Home & Kitchen,199.59,2024-09-25
+29,Storage Ottoman,Home & Kitchen,281.77,2024-01-29
+30,Bamboo Cutting Board,Home & Kitchen,183.64,2022-09-15
+31,Yoga Mat,Sports,231.22,2022-09-20
+32,Dumbbell Set,Sports,76.97,2022-06-17
+33,Insulated Water Bottle,Sports,98.43,2023-02-01
+34,Resistance Bands,Sports,388.57,2021-04-07
+35,Camping Tent,Sports,67.84,2022-08-06
+36,Pickleball Paddles,Sports,187.8,2021-12-07
+37,Foam Roller,Sports,251.26,2021-11-26
+38,Hiking Backpack,Sports,287.6,2022-08-08
+39,Jump Rope,Sports,81.08,2021-12-26
+40,Cooler 45qt,Sports,337.33,2024-11-19
+41,Vitamin C Serum,Beauty,362.83,2021-11-11
+42,Moisturizer SPF 30,Beauty,72.88,2021-08-28
+43,Clay Mask,Beauty,26.04,2022-10-11
+44,Hair Dryer,Beauty,234.05,2023-06-22
+45,Lip Tint Set,Beauty,111.55,2022-01-13
+46,Body Lotion,Beauty,90.0,2024-12-19
+47,Face Roller,Beauty,23.52,2022-10-12
+48,Dry Shampoo,Beauty,391.42,2021-10-30
+49,Eyelash Curler,Beauty,155.43,2024-01-11
+50,Hand Cream Trio,Beauty,390.42,2023-12-29
+51,Mystery Novel,Books,127.6,2021-02-21
+52,Cookbook,Books,167.77,2023-10-20
+53,Sci-Fi Paperback,Books,309.71,2023-07-28
+54,Business Bestseller,Books,371.84,2021-11-16
+55,Children's Picture Book,Books,11.66,2024-01-24
+56,History Hardcover,Books,390.47,2022-11-10
+57,Poetry Collection,Books,262.42,2022-08-29
+58,Travel Guide,Books,194.82,2022-08-17
+59,Graphic Novel,Books,388.14,2024-03-20
+60,Memoir,Books,270.08,2024-03-03
