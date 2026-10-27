@@ -29,29 +29,64 @@ models:
               values: ['delivered', 'shipped', 'pending', 'cancelled', 'returned']
 
   - name: dim_customers
-    description: "One row per customer with lifetime aggregates."
+    description: "One row per customer VERSION (SCD Type 2, from customers_snapshot). customer_id is not unique here by design; customer_sk is."
     columns:
-      - name: customer_id
+      - name: customer_sk
         tests: [unique, not_null]
+      - name: customer_id
+        tests: [not_null]
 
   - name: dim_products
-    description: "One row per product with demand aggregates."
+    description: "One row per product. Attributes only; measures live in facts."
     columns:
+      - name: product_sk
+        tests: [unique, not_null]
       - name: product_id
         tests: [unique, not_null]
 
+  - name: dim_date
+    description: "One row per calendar day, 2020-01-01 through 2030-12-31. Calendar attributes live here, not as repeated date logic in facts."
+    columns:
+      - name: date_sk
+        tests: [unique, not_null]
+      - name: date_value
+        tests: [unique, not_null]
+
+
   - name: fct_orders
-    description: "One row per order, enriched. Grain: order_id."
+    description: "One row per order. Keys + measures only. Grain: order_id."
     columns:
       - name: order_id
         tests: [unique, not_null]
-      - name: customer_id
+      - name: date_sk
         tests:
           - relationships:
-              to: ref('dim_customers')
-              field: customer_id
-      - name: product_id
+              arguments:
+                to: ref('dim_date')
+                field: date_sk
+      - name: customer_sk
         tests:
           - relationships:
-              to: ref('dim_products')
-              field: product_id
+              arguments:
+                to: ref('dim_customers')
+                field: customer_sk
+      - name: product_sk
+        tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_sk
+
+  - name: daily_revenue
+    description: "Aggregate fact on fct_orders. Grain: one row per calendar day."
+    columns:
+      - name: revenue_date
+        tests: [unique, not_null]
+
+  - name: category_performance
+    description: "Aggregate fact on fct_orders. Grain: one row per category per calendar month."
+    columns:
+      - name: category
+        tests: [not_null]
+      - name: revenue_month
+        tests: [not_null]

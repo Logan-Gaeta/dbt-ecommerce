@@ -8002,3 +8002,4 @@ order_id,customer_id,product_id,order_date,quantity,unit_price,discount_pct,stat
 8001,1,1,2026-10-13,2,29.99,0,delivered
 8002,2,5,2026-10-13,1,49.99,0.10,shipped
 8003,3,10,2026-10-14,3,19.99,0,delivered
+8004,1,59,2026-10-27,1,100.00,0,delivered

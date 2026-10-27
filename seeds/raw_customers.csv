@@ -1,5 +1,5 @@
 customer_id,first_name,last_name,email,signup_date,region,customer_segment
-1,Daniel,Brown,daniel.brown4@example.com,2023-05-17,Northeast,vip
+1,Daniel,Brown,daniel.brown4@example.com,2023-05-17,Northeast,lapsed
 2,Lisa,Brown,lisa.brown87@example.com,2025-01-21,Midwest,lapsed
 3,Mary,Smith,mary.smith12@example.com,2024-10-31,Midwest,returning
 4,Matthew,Moore,matthew.moore54@example.com,2025-04-21,South,new
